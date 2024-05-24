@@ -1,0 +1,213 @@
+[
+    {
+        "id": "031b706d6ff0e02a",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c7ff7b3b951f6774",
+        "type": "debug",
+        "z": "031b706d6ff0e02a",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7ec95f541b9a9218",
+        "type": "MSSQL",
+        "z": "031b706d6ff0e02a",
+        "mssqlCN": "c1b4fb13714e8e0d",
+        "name": "hi",
+        "outField": "payload",
+        "returnType": "0",
+        "throwErrors": "0",
+        "query": "",
+        "modeOpt": "",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "msg",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "msg",
+        "rows": "",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "c7ff7b3b951f6774"
+            ]
+        ]
+    },
+    {
+        "id": "c9625a85df905eb6",
+        "type": "http request",
+        "z": "031b706d6ff0e02a",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8000/?query=Python%20developer%20in%20Ha%20Noi",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "6fc35f17b2340cee"
+            ]
+        ]
+    },
+    {
+        "id": "ca9f62c17dc639d7",
+        "type": "inject",
+        "z": "031b706d6ff0e02a",
+        "name": "cv",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "c9625a85df905eb6"
+            ]
+        ]
+    },
+    {
+        "id": "6fc35f17b2340cee",
+        "type": "function",
+        "z": "031b706d6ff0e02a",
+        "name": "function 3",
+        "func": "// Parse JSON từ msg.payload\nvar jsonArray = JSON.parse(msg.payload);\n\n// Khởi tạo mảng để lưu trữ các câu lệnh SQL INSERT\nvar sqlStatements = [];\n\n// Duyệt qua mỗi mục trong mảng JSON\nfor (var i = 0; i < jsonArray.length; i++) {\n    var json = jsonArray[i];\n\n    // Tạo câu lệnh SQL INSERT cho mục hiện tại\n    var sql = `INSERT INTO JobHistory (employer_name, job_employment_type, job_title, job_apply_link) \n                VALUES ('${json.employer_name}', '${json.job_employment_type}', '${json.job_title}', '${json.job_apply_link}')`;\n\n    // Thêm câu lệnh SQL INSERT vào mảng\n    sqlStatements.push(sql);\n}\n\n// Kết hợp tất cả các câu lệnh SQL INSERT thành một chuỗi, mỗi câu lệnh cách nhau bằng dấu chấm phẩy\nmsg.payload = sqlStatements.join('; ');\n\n// Trả về msg chứa các câu lệnh SQL INSERT\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "7ec95f541b9a9218",
+                "4bbffa87c8739716"
+            ]
+        ]
+    },
+    {
+        "id": "4bbffa87c8739716",
+        "type": "debug",
+        "z": "031b706d6ff0e02a",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9cd4ae0a14635ca8",
+        "type": "inject",
+        "z": "031b706d6ff0e02a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "e1be81bd773853e4"
+            ]
+        ]
+    },
+    {
+        "id": "e1be81bd773853e4",
+        "type": "function",
+        "z": "031b706d6ff0e02a",
+        "name": "",
+        "func": "msg.payload = 'select * from sensor;'\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "7ec95f541b9a9218"
+            ]
+        ]
+    },
+    {
+        "id": "c1b4fb13714e8e0d",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "hiu",
+        "server": "127.0.0.1",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "vieclam",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true,
+        "readOnlyIntent": false
+    }
+]
