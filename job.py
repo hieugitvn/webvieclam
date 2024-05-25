@@ -11,6 +11,10 @@ headers = {
 }
 
 @app.get("/")
+def read_root():
+    return {"Hà Trung Hiếu"}
+
+@app.get("/job")
 def get_job(query: str = None):
     if query is None:
         raise HTTPException(status_code=400, detail="Query parameter is required")
@@ -22,14 +26,20 @@ def get_job(query: str = None):
     if response.status_code != 200:
         raise HTTPException(status_code=response.status_code, detail="Failed to fetch data from external API")
 
-    # Extracting only specific fields from the response data
+    # Trích xuất và dịch các trường cần thiết từ dữ liệu phản hồi
     extracted_data = []
     for job in response.json()["data"]:
         job_info = {
-            "employer_name": job.get("employer_name"),
-            "job_employment_type": job.get("job_employment_type"),
-            "job_title": job.get("job_title"),
-            "job_apply_link": job.get("job_apply_link")
+            "macongviec": job.get("job_id"),
+            "tennhatuyendung": job.get("employer_name"),
+            "trangwebnhatuyendung": job.get("employer_website"),
+            "loaihinhcongviec": job.get("job_employment_type"),
+            "tencongviec": job.get("job_title"),
+            "lienketungtuyen": job.get("job_apply_link"),
+            "ngaydangtinUTC": job.get("job_posted_at_datetime_utc"),
+            "ngayhethanUTC": job.get("job_offer_expiration_datetime_utc"),
+            "thanhpho": job.get("job_city"),
+            "quocgia": job.get("job_country")
         }
         extracted_data.append(job_info)
 

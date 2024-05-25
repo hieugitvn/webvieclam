@@ -1,6 +1,6 @@
 [
     {
-        "id": "031b706d6ff0e02a",
+        "id": "abc380b468955ac2",
         "type": "tab",
         "label": "Flow 2",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "c7ff7b3b951f6774",
+        "id": "dae8e8b37d3d455d",
         "type": "debug",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "debug 7",
         "active": true,
         "tosidebar": true,
@@ -25,9 +25,9 @@
         "wires": []
     },
     {
-        "id": "7ec95f541b9a9218",
+        "id": "dc8db5610c59f3c6",
         "type": "MSSQL",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "mssqlCN": "c1b4fb13714e8e0d",
         "name": "hi",
         "outField": "payload",
@@ -48,19 +48,19 @@
         "y": 460,
         "wires": [
             [
-                "c7ff7b3b951f6774"
+                "dae8e8b37d3d455d"
             ]
         ]
     },
     {
-        "id": "c9625a85df905eb6",
+        "id": "8afc44f53f37f85d",
         "type": "http request",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://127.0.0.1:8000/?query=Python%20developer%20in%20Ha%20Noi",
+        "url": "http://127.0.0.1:8000/job?query=Python%20developer%20in%20Ha%20Noi",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -72,14 +72,14 @@
         "y": 460,
         "wires": [
             [
-                "6fc35f17b2340cee"
+                "33b59cd6d0dfda22"
             ]
         ]
     },
     {
-        "id": "ca9f62c17dc639d7",
+        "id": "144600da65157c42",
         "type": "inject",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "cv",
         "props": [
             {
@@ -101,16 +101,16 @@
         "y": 460,
         "wires": [
             [
-                "c9625a85df905eb6"
+                "8afc44f53f37f85d"
             ]
         ]
     },
     {
-        "id": "6fc35f17b2340cee",
+        "id": "33b59cd6d0dfda22",
         "type": "function",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "function 3",
-        "func": "// Parse JSON từ msg.payload\nvar jsonArray = JSON.parse(msg.payload);\n\n// Khởi tạo mảng để lưu trữ các câu lệnh SQL INSERT\nvar sqlStatements = [];\n\n// Duyệt qua mỗi mục trong mảng JSON\nfor (var i = 0; i < jsonArray.length; i++) {\n    var json = jsonArray[i];\n\n    // Tạo câu lệnh SQL INSERT cho mục hiện tại\n    var sql = `INSERT INTO JobHistory (employer_name, job_employment_type, job_title, job_apply_link) \n                VALUES ('${json.employer_name}', '${json.job_employment_type}', '${json.job_title}', '${json.job_apply_link}')`;\n\n    // Thêm câu lệnh SQL INSERT vào mảng\n    sqlStatements.push(sql);\n}\n\n// Kết hợp tất cả các câu lệnh SQL INSERT thành một chuỗi, mỗi câu lệnh cách nhau bằng dấu chấm phẩy\nmsg.payload = sqlStatements.join('; ');\n\n// Trả về msg chứa các câu lệnh SQL INSERT\nreturn msg;\n",
+        "func": "// Parse JSON từ msg.payload\nvar jsonArray = JSON.parse(msg.payload);\n\n// Khởi tạo mảng để lưu trữ các câu lệnh SQL INSERT\nvar sqlStatements = [];\n\n// Duyệt qua mỗi mục trong mảng JSON\nfor (var i = 0; i < jsonArray.length; i++) {\n    var json = jsonArray[i];\n\n    // Tạo câu lệnh SQL INSERT cho mục hiện tại\n    var sql = `INSERT INTO JobHistory (macongviec, tennhatuyendung, trangwebnhatuyendung, loaihinhcongviec, tencongviec, lienketungtuyen, ngaydangtinUTC, ngayhethanUTC, thanhpho, quocgia) \n                VALUES (N'${json.macongviec}', N'${json.tennhatuyendung}', N'${json.trangwebnhatuyendung}', N'${json.loaihinhcongviec}', N'${json.tencongviec}', N'${json.lienketungtuyen}', '${json.ngaydangtinUTC}', '${json.ngayhethanUTC}', N'${json.thanhpho}', N'${json.quocgia}')`;\n\n    // Thêm câu lệnh SQL INSERT vào mảng\n    sqlStatements.push(sql);\n}\n\n// Kết hợp tất cả các câu lệnh SQL INSERT thành một chuỗi, mỗi câu lệnh cách nhau bằng dấu chấm phẩy\nmsg.payload = sqlStatements.join('; ');\n\n// Trả về msg chứa các câu lệnh SQL INSERT\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -121,21 +121,22 @@
         "y": 460,
         "wires": [
             [
-                "7ec95f541b9a9218",
-                "4bbffa87c8739716"
+                "dc8db5610c59f3c6",
+                "133c18dd914547c6"
             ]
         ]
     },
     {
-        "id": "4bbffa87c8739716",
+        "id": "133c18dd914547c6",
         "type": "debug",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "debug 8",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 760,
@@ -143,9 +144,9 @@
         "wires": []
     },
     {
-        "id": "9cd4ae0a14635ca8",
+        "id": "f7c9e7f2b66ac431",
         "type": "inject",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "",
         "props": [
             {
@@ -167,14 +168,14 @@
         "y": 320,
         "wires": [
             [
-                "e1be81bd773853e4"
+                "f7804034a14e5ecf"
             ]
         ]
     },
     {
-        "id": "e1be81bd773853e4",
+        "id": "f7804034a14e5ecf",
         "type": "function",
-        "z": "031b706d6ff0e02a",
+        "z": "abc380b468955ac2",
         "name": "",
         "func": "msg.payload = 'select * from sensor;'\nreturn msg;",
         "outputs": 1,
@@ -187,7 +188,7 @@
         "y": 320,
         "wires": [
             [
-                "7ec95f541b9a9218"
+                "dc8db5610c59f3c6"
             ]
         ]
     },

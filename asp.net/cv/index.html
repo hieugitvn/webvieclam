@@ -2,41 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Job History</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tuyển dụng</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Job History</h1>
-    <table id="jobHistoryTable">
+    <h1>Danh sách tuyển dụng</h1>
+    <table id="jobsTable">
         <thead>
             <tr>
-                <th>Job ID</th>
-                <th>Employer Name</th>
-                <th>Job Employment Type</th>
-                <th>Job Title</th>
-                <th>Job Apply Link</th>
+                <th>Tên nhà tuyển dụng</th>
+                <th>Trang web nhà tuyển dụng</th>
+                <th>Loại hình công việc</th>
+                <th>Tên công việc</th>
+                <th>Liên kết ứng tuyển</th>
+                <th>Ngày đăng tin UTC</th>
+                <th>Ngày hết hạn UTC</th>
+                <th>Thành phố</th>
+                <th>Quốc gia</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Data will be inserted here by JavaScript -->
         </tbody>
     </table>
     <script src="script.js"></script>

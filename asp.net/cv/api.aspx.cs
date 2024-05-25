@@ -11,13 +11,14 @@ namespace cv
         protected void Page_Load(object sender, EventArgs e)
         {
             string connectionString = "Data Source=127.0.0.1,1433;Initial Catalog=vieclam;User Id=sa;Password=123;";
-            string query = "SELECT job_id, employer_name, job_employment_type, job_title, job_apply_link FROM JobHistory";
+            string query = "SP_GetJobs";
             DataTable dataTable = new DataTable();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    command.CommandType = CommandType.StoredProcedure;
                     connection.Open();
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     adapter.Fill(dataTable);
