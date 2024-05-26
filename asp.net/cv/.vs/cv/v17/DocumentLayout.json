@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\",
+  "WorkspaceRootPath": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|c:\\users\\hatrg\\onedrive\\m\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:api.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|c:\\users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{4B9FC83A-E25F-4AB5-BB81-B6E73F6A1A72}|cv.csproj|solutionrelative:api.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
@@ -34,15 +34,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\styles.css",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\styles.css",
               "RelativeDocumentMoniker": "styles.css",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\styles.css",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\styles.css",
               "RelativeToolTip": "styles.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -52,9 +52,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "packages.config",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\packages.config",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\packages.config",
               "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\packages.config",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\packages.config",
               "RelativeToolTip": "packages.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -62,24 +62,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "script.js",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\script.js",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\script.js",
               "RelativeDocumentMoniker": "script.js",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\script.js",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\script.js",
               "RelativeToolTip": "script.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-24T14:11:22.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T14:11:22.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\index.html",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\index.html",
               "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\index.html",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\index.html",
               "RelativeToolTip": "index.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -88,23 +87,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "api.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx.cs",
               "RelativeDocumentMoniker": "api.aspx.cs",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx.cs",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx.cs",
               "RelativeToolTip": "api.aspx.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T14:07:43.456Z"
+              "WhenOpened": "2024-05-24T14:07:43.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "api.aspx",
-              "DocumentMoniker": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx",
+              "DocumentMoniker": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx",
               "RelativeDocumentMoniker": "api.aspx",
-              "ToolTip": "C:\\Users\\hatrg\\OneDrive\\M\u00E1y t\u00EDnh\\vieclam\\asp.net\\cv\\api.aspx",
+              "ToolTip": "C:\\Users\\hatrg\\source\\repos\\hieugitvn\\webvieclam\\asp.net\\cv\\api.aspx",
               "RelativeToolTip": "api.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
