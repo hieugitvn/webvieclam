@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "A:\\Dev\\Python\\job_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\job_project\\settings.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:job_project\\settings.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\jobs\\views.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:jobs\\views.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\jobs\\templates\\jobs\\job_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:jobs\\templates\\jobs\\job_list.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\H\u1ECDc t\u1EADp\\Python\\job_project\\jobs\\migrations\\0001_initial.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\jobs\\migrations\\__init__.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:jobs\\migrations\\__init__.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\jobs\\models.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:jobs\\models.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\job_project\\asgi.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:job_project\\asgi.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|A:\\Dev\\Python\\job_project\\job_project\\urls.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:job_project\\urls.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "job_list.html",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\jobs\\templates\\jobs\\job_list.html",
+              "RelativeDocumentMoniker": "jobs\\templates\\jobs\\job_list.html",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\jobs\\templates\\jobs\\job_list.html",
+              "RelativeToolTip": "jobs\\templates\\jobs\\job_list.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-31T17:10:14.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "0001_initial.py",
+              "DocumentMoniker": "A:\\H\u1ECDc t\u1EADp\\Python\\job_project\\jobs\\migrations\\0001_initial.py",
+              "RelativeDocumentMoniker": "..\\..\\..\\H\u1ECDc t\u1EADp\\Python\\job_project\\jobs\\migrations\\0001_initial.py",
+              "ToolTip": "A:\\H\u1ECDc t\u1EADp\\Python\\job_project\\jobs\\migrations\\0001_initial.py",
+              "RelativeToolTip": "..\\..\\..\\H\u1ECDc t\u1EADp\\Python\\job_project\\jobs\\migrations\\0001_initial.py",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:38:03.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "__init__.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\jobs\\migrations\\__init__.py",
+              "RelativeDocumentMoniker": "jobs\\migrations\\__init__.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\jobs\\migrations\\__init__.py",
+              "RelativeToolTip": "jobs\\migrations\\__init__.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:38:01.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "views.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\jobs\\views.py",
+              "RelativeDocumentMoniker": "jobs\\views.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\jobs\\views.py",
+              "RelativeToolTip": "jobs\\views.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:35:26.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "models.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\jobs\\models.py",
+              "RelativeDocumentMoniker": "jobs\\models.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\jobs\\models.py",
+              "RelativeToolTip": "jobs\\models.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:35:15.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "asgi.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\job_project\\asgi.py",
+              "RelativeDocumentMoniker": "job_project\\asgi.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\job_project\\asgi.py",
+              "RelativeToolTip": "job_project\\asgi.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:35:12.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "settings.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\job_project\\settings.py",
+              "RelativeDocumentMoniker": "job_project\\settings.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\job_project\\settings.py",
+              "RelativeToolTip": "job_project\\settings.py",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:35:03.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "urls.py",
+              "DocumentMoniker": "A:\\Dev\\Python\\job_project\\job_project\\urls.py",
+              "RelativeDocumentMoniker": "job_project\\urls.py",
+              "ToolTip": "A:\\Dev\\Python\\job_project\\job_project\\urls.py",
+              "RelativeToolTip": "job_project\\urls.py",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-05-27T13:35:00.185Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

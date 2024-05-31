@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job List</title>
+</head>
+<body>
+    <h1>Job List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>macongviec</th>
+                <th>tennhatuyendung</th>
+                <th>trangwebnhatuyendung</th>
+                <th>loaihinhcongviec</th>
+                <th>tencongviec</th>
+                <th>lienketungtuyen</th>
+                <th>ngaydangtinUTC</th>
+                <th>ngayhethanUTC</th>
+                <th>thanhpho</th>
+                <th>quocgia</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for job in jobs %}
+            <tr>
+                <td>{{ job.macongviec }}</td>
+                <td>{{ job.tennhatuyendung }}</td>
+                <td>{{ job.trangwebnhatuyendung }}</td>
+                <td>{{ job.loaihinhcongviec }}</td>
+                <td>{{ job.tencongviec }}</td>
+                <td>{{ job.lienketungtuyen }}</td>
+                <td>{{ job.ngaydangtinUTC }}</td>
+                <td>{{ job.ngayhethanUTC }}</td>
+                <td>{{ job.thanhpho }}</td>
+                <td>{{ job.quocgia }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

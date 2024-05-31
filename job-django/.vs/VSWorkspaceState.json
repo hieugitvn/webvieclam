@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\jobs",
+    "\\jobs\\migrations",
+    "\\jobs\\templates",
+    "\\jobs\\templates\\jobs",
+    "\\job_project"
+  ],
+  "SelectedNode": "\\job_project\\settings.py",
+  "PreviewInSolutionExplorer": false
+}
