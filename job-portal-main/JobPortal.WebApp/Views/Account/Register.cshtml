@@ -1,0 +1,74 @@
+﻿@model JobPortal.Data.ViewModel.RegisterViewModel
+
+@{
+    Layout = "_LayoutAccount";
+}
+
+<!-- /Logo -->
+<h4 class="mb-2">bắt đầu từ đây 🚀</h4>
+<p class="mb-4">Mong các bạn có giây phút vui vẻ!</p>
+
+<form id="registerForm" class="mb-3" action="#" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label><span class="text-danger">*</span>
+        <input asp-for="Email" type="text" class="form-control" autocomplete="username" aria-required="true" placeholder="Nhập email của bạn" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="mb-3 form-password-toggle">
+        <label asp-for="Password" class="form-label"></label><span class="text-danger">*</span>
+        <div class="input-group input-group-merge">
+            <input asp-for="Password"
+                   type="password"
+                   class="form-control"
+                   autocomplete="new-password"
+                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                   aria-required="true" />
+            <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+        </div>
+    </div>
+    <div class="mb-3 form-password-toggle">
+        <label asp-for="ConfirmPassword" class="form-label"></label><span class="text-danger">*</span>
+        <div class="input-group input-group-merge">
+            <input asp-for="ConfirmPassword"
+                   type="password"
+                   class="form-control"
+                   autocomplete="new-password"
+                   placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                   aria-required="true" />
+            <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="FullName" class="form-label"></label><span class="text-danger">*</span>
+        <input asp-for="FullName" type="text" class="form-control" autocomplete="" aria-required="true" placeholder="Nhập họ và tên của bạn" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label"></label><span class="text-danger">*</span>
+        <input asp-for="Age" type="text" class="form-control" autocomplete="" aria-required="true" placeholder="Nhập tuổi của bạn" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Phone" class="form-label"></label><span class="text-danger">*</span>
+        <input asp-for="Phone" type="text" class="form-control" autocomplete="" aria-required="true" placeholder="Nhập số điện thoại của bạn" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address" class="form-label"></label><span class="text-danger">*</span>
+        <input asp-for="Address" type="text" class="form-control" autocomplete="" aria-required="true" placeholder="Nhập địa chỉ của bạn" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <button id="registerSubmit" type="submit" class="btn btn-primary d-grid w-100">Đăng ký</button>
+</form>
+
+<p class="text-center">
+    <span>Bạn đã có tài khoản?</span>
+    <a href="/login">
+        <span>Đăng nhập ngay</span>
+    </a>
+</p>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

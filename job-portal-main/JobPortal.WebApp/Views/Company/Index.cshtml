@@ -1,0 +1,157 @@
+﻿@model IEnumerable<JobPortal.Data.Entities.AppUser>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+@{
+    Layout = "_Layout";
+    int startRank = ViewBag.StartRank ?? 1; // Lấy giá trị startRank từ ViewBag, mặc định là 1 nếu không tồn tại
+}
+
+<style>
+    .pagination {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+        .pagination li {
+            margin: 0 5px;
+        }
+
+            .pagination li a {
+                display: inline-block;
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                color: #333;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .pagination li.active a {
+                background-color: #333;
+                color: #fff;
+            }
+</style>
+
+<!-- Bắt đầu khu vực banner -->
+<section class="banner-area relative" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    <span>Các công ty công nghệ hàng đầu Việt Nam</span>
+                </h1>
+                <p class="text-white link-nav"><a href="/">Trang chủ </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/company"> Tất cả các công ty</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Kết thúc khu vực banner -->
+<!-- Bắt đầu khu vực danh sách công ty -->
+<section class="post-area section-gap">
+    <div class="container">
+        <div class="row justify-content-center d-flex">
+            <div class="col-lg-8 post-list">
+                <!-- Danh sách công ty -->
+                @if (Model.Any())
+                {
+                    @for (int i = 0; i < Model.Count(); i++)
+                    {
+                        var employer = Model.ElementAt(i);
+                        <div class="single-post d-flex flex-row">
+                            <!-- Ảnh công ty -->
+                            <div class="thumb">
+                                <a href="/job?slug=@employer.Slug"><img style="border-radius:10px" width="200" height="100" src="https://localhost:7211/images/employers/@employer.UrlAvatar" alt="Ảnh công ty"></a>
+                                <ul class="tags">
+                                    <!-- Tỉnh/Thành phố -->
+                                    <li>
+                                        <strong><span class="lnr lnr-map-marker"></span><a href="/job?slug=@employer.Province.Slug"> @employer.Province.Name</a></strong>
+                                    </li>
+                                </ul>
+                                <hr />
+                                <h3 style="color: red; text-align: center">#@(startRank++)</h3>
+                            </div>
+                            <!-- Chi tiết công ty -->
+                            <div class="details" style="margin-left:20px; width:600px;">
+                                <div class="title d-flex flex-row justify-content-between">
+                                    <div class="titles">
+                                        <a href="/company/@employer.Slug"><h4>@employer.FullName</h4></a>
+                                        <p><img width="30" height="20" src="https://localhost:7211/images/countries/@employer.Country.Flag" alt="cờ"> @employer.Country.Name</p>
+                                        <strong><a target="_blank" href="https://@employer.WebsiteURL" style="color: black"><span class="lnr lnr-link"></span> @employer.WebsiteURL</a></strong>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div style="display:flex; justify-content: space-between;">
+                                    <div>
+                                        <h5><strong><span class="lnr lnr-clock"></span> @employer.WorkingDays</strong></h5>
+                                        <h5><strong><span class="lnr lnr-users"></span> @employer.CompanySize</strong></h5>
+                                        <h5 style="color: blue" class="address"><strong><span class="lnr lnr-envelope"></span> @employer.Email</strong></h5>
+                                        <h5 style="color: green" class="address"><strong><span class="lnr lnr-phone-handset"></span> @employer.Phone</strong></h5>
+                                    </div>
+                                    <div style="text-align:right; margin-top: 80px">
+                                        <ul class="btns">
+                                            <li><a href="/company/@employer.Slug">Xem thông tin công ty</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-center" style="margin-top: 50px;">
+                        <img src="~/images/default/oops.png" alt="oops" width="600" height="400" style="margin-bottom: 10px; border-radius:10px">
+                        <h4>Xin lỗi! Hiện không có công ty nào.</h4>
+                    </div>
+                }
+                <!-- Kết thúc danh sách công ty -->
+                <!-- Phân trang -->
+                <div class="text-center">
+                    <ul class="pagination">
+                        @Html.PagedListPager((IPagedList)Model, page =>
+                                 Url.Action("Index", new { page }),
+                                 new PagedListRenderOptions
+                        {
+                            Display = PagedListDisplayMode.IfNeeded,
+                            LiElementClasses = new string[] { "page-item" },
+                            UlElementClasses = new string[] { "pagination" },
+                            PageClasses = new string[] { "page-link" },
+                            MaximumPageNumbersToDisplay = 7, // Số trang tối đa hiển thị
+                            LinkToPreviousPageFormat = "<span aria-hidden=\"true\">&lsaquo;</span>",
+                            LinkToNextPageFormat = "<span aria-hidden=\"true\">&rsaquo;</span>",
+                            LinkToFirstPageFormat = "<span aria-hidden=\"true\">&lsaquo;&lsaquo;</span>",
+                            LinkToLastPageFormat = "<span aria-hidden=\"true\">&rsaquo;&rsaquo;</span>"
+                        })
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Thanh bên -->
+            @Html.Partial("../Shared/_SidebarPartial.cshtml")
+
+        </div>
+    </div>
+</section>
+<!-- Kết thúc khu vực danh sách công ty -->
+<!-- Bắt đầu khu vực gọi tác động -->
+<section class="callto-action-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content col-lg-9">
+                <div class="title text-center">
+                    <h1 class="mb-10 text-white">Hãy gia nhập chúng tôi ngay hôm nay mà không do dự</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <a class="primary-btn" href="#">Tôi là ứng viên</a>
+                    <a class="primary-btn" href="#">Yêu cầu Demo miễn phí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Kết thúc khu vực gọi tác động -->
